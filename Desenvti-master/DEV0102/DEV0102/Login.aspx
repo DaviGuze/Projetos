@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Login</title>
 </head>
-<body>
+<body style="background-color:gainsboro">
     <form id="form1" runat="server">
         <div>
             <h3>Login do Sistema</h3>
@@ -19,8 +19,9 @@
             <br />
             <br />
             <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-            <br />
+             <asp:Button ID="btnCadastrarse" runat="server" Text="Cadastrar-se" OnClick="btnCadastrarse_Click" /><br />
             <asp:LinkButton ID="btnEsqueciSenha" runat="server" Text="Esqueci a senha" OnClick="btnEsqueciSenha_Click"></asp:LinkButton>
+            
 
         </div>
     </form>

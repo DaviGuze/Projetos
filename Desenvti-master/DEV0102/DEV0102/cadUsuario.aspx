@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Cadastro de Usuários</title>
 </head>
-<body>
+<body style="background-color:gainsboro">
     <form id="form1" runat="server">
         <div>
             
@@ -30,10 +30,12 @@
             <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox><br />
             <label>Senha:</label><br />
             <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
-            <br />
-            <asp:FileUpload ID="fupFoto" runat="server" /><br />
+            <br /><br />
+            <asp:FileUpload ID="fupFoto" runat="server" /><br /><br />
             <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" OnClick="btnCadastrar_Click" />
-            <br />
+            <br /><br />
+            <asp:Button ID="btnVoltar" runat="server" Text="Voltar" OnClick="btnVoltar_Click" /><br/>
+            <asp:Panel ID="panelUsuariosCadastrados" runat="server" Visible="false">
             <h4>Usuários Cadastrados</h4>
             <asp:GridView ID="gridUsuario" OnRowCommand="gridUsuario_RowCommand" runat="server" AutoGenerateColumns="False" DataKeyNames="codigo" DataSourceID="SqlDataSourceUsuario" AllowPaging="True" AllowSorting="True">
                 <Columns>
@@ -56,7 +58,10 @@
             <asp:HiddenField ID="hiddenfildCodigo" runat="server" Value="0" />
 
             <asp:SqlDataSource runat="server" ID="SqlDataSourceUsuario" ConnectionString='<%$ ConnectionStrings:DEV0102ConnectionString %>' SelectCommand="select '~/fotoUsuario/' + nomeFoto as caminhoFoto, * from tabusuario"></asp:SqlDataSource>
-        </div>
+
+            <asp:Button ID="btnEnviarEmail" runat="server" Text="Enviar E-mail" OnClick="btnEnviarEmail_Click" OnClientClick="return confirm('Deseja realmente Enviar E-mail')" /><br />
+       </asp:Panel>
+                </div>
     </form>
 </body>
 </html>
