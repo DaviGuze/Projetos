@@ -1,0 +1,122 @@
+
+     #imagemlogo{
+        width: 343px;
+     }
+     
+     header{
+      background-color: black;
+      height: 150px;
+      padding-left: 30px;
+     }
+
+
+     body{
+        background-color: rgb(31, 30, 30);
+     }
+
+    @font-face {
+        font-family: residentevil;
+                src: url(amatic-bold-webfont.woff);
+    }
+    @font-face {
+      font-family: residentevil1;
+      src: url(bebas-regular-webfont.woff);
+    }
+
+     .divjogos{
+        font-weight: bolder;
+        font-size: 23px;
+        font-family: residentevil;
+        }
+            
+           
+       .divtextoGeral{
+            color:lightgray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 30px; 
+            padding-right: 30px; 
+            text-align: justify;
+            font-size: 20px;                                      
+               }
+            #imagemcorpo{
+            width: 1270px;
+            height: 650px;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: justify;
+                }
+
+                .divimagemcorpo{
+                  position: relative;
+                }
+                .divtitulo{
+                 position: absolute;
+                 left: 530px;
+                 bottom: 325px;
+                 color: white;
+                 font-size: 20px;
+                 font-family: residentevil1;
+                 
+                }
+             .divimagensfinaldapagina{
+              position: relative;
+              left: 30px;
+              display: inline-block;
+              overflow: hidden;
+              }
+
+              .divimagensfinaldapagina img{
+               -moz-transition: all 0.3s;
+               -webkit-transition: all 0.3s;
+               transition: all 0.3s;
+              }
+
+              .divimagensfinaldapagina:hover img{
+               -moz-transform: scale(1.1);
+               -webkit-transform: scale(1.1);
+               transform: scale(1.1);
+              }
+             
+
+             .divtextofinaldapagina{
+               position: absolute;
+               color: white;
+               font-size: 15px;
+               font-family: residentevil1;
+               left: 300px;
+               top: 1890px;
+               font-weight: bolder;
+                }
+               
+                .divimagensfinaldapagina1{
+                  position: relative;
+                  left: 35px;
+                  display: inline-block;
+                  overflow: hidden;
+                  }
+
+                  .divimagensfinaldapagina1 img{
+                     -moz-transition: all 0.3s;
+                     -webkit-transition: all 0.3s;
+                     transition: all 0.3s;
+                    }
+      
+                    .divimagensfinaldapagina1:hover img{
+                     -moz-transform: scale(1.1);
+                     -webkit-transform: scale(1.1);
+                     transform: scale(1.1);
+                    }
+
+              .divtextofinaldapagina1{
+               position: absolute;
+               color: white;
+               font-size: 15px;
+               font-family: residentevil1;
+               left: 950px;
+               top: 1890px;
+               font-weight: bolder;
+                }
+               
+            
+
+        
